@@ -600,6 +600,14 @@ header .btn span {
 }
 
 
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #333333;
+    margin-bottom: 42px;
+}
 .repair {
     margin-bottom: 219px;
 }
@@ -737,32 +745,34 @@ header .btn span {
 }
 .accordion_item .head {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
     cursor: pointer;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    background: #BE8D55;
+    padding: 25px 28px 25px 21px;
+}
+.accordion_item .head span {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
 }
 .accordion_item .head .title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    color: var(--text_color);
-    margin-left: 12px;
-    margin-right: auto; 
-    transition: all .4s;
-    text-transform: inherit;
-}
-.accordion_item .head .title:hover {
-    color: #545454;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-right: 20px;
+    text-align: start;
 }
 .accordion_item .data {
     padding-left: 33px;
-    font-family: var(--font_family2);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: #545454; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(51, 51, 51, 0.9);
     transition: all .6s;
 }
 .accordion .accordion_item .data {
@@ -771,17 +781,19 @@ header .btn span {
 .accordion .accordion_item.active .data {
     display: block; 
 }
-.accordion .accordion_item.active .icon img:nth-child(1) {
-    display: none;
+.accordion .accordion_item.active .head span {
+    color: #BE8D55;
 }
-.accordion .accordion_item.active .icon img:nth-child(2) {
-    display: block;
+.accordion .accordion_item.active .head {
+    background: rgba(217, 217, 217, 0.2);
+    border: 4px solid #BE8D55;
+    margin-bottom: 29px;
 }
-.accordion .accordion_item .icon img:nth-child(1) {
-    display: block;
-}
-.accordion .accordion_item .icon img:nth-child(2) {
-    display: none;
+.accordion .accordion_item.active .head .title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
 }
 
 
