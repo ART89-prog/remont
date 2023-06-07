@@ -600,6 +600,9 @@ header .btn span {
 }
 
 
+.repair {
+    margin-bottom: 219px;
+}
 .repair .swiper-slide {
     width: 100%;
     display: inherit;
@@ -656,6 +659,53 @@ header .btn span {
     pointer-events: none;
     opacity: 0;
 } 
+.repair_item {
+    background: #F9F9F9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);   
+}
+.repair_item-img img {
+    display: block;
+    width: 100%;
+}
+.repair_item-info {
+    margin: 0 19px 19px;
+    border: 1px solid #BE8D55;
+    border-top: none;  
+    padding: 0 18px 19px;
+}
+.repair_item-title {
+    padding-top: 24px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 23px;
+    text-align: center;
+}
+.repair_item-link {
+    max-width: 242px;
+    height: 50px;
+    width: 100%;
+    background: #BE8D55;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 50px;
+    color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.repair_item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 25px;
+}
+
+
 
 
 

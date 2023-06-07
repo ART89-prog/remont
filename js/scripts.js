@@ -119,8 +119,7 @@ $(() => {
 		let options = {
 			loop: true,
 			speed: 500,
-			slidesPerView:'auto',
-			spaceBetween: 42,
+			spaceBetween: 19,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
@@ -136,13 +135,16 @@ $(() => {
 					slidesPerView: 1
 				},
 				480: {
-					spaceBetween: 50,
+					spaceBetween: 0,
+					spaceBetween: 1,
 				},
 				768: {
-					spaceBetween: 50,
+					spaceBetween: 15,
+					slidesPerView: 2
 				},
 				1023: {
-					spaceBetween: 50,
+					spaceBetween: 15,
+					slidesPerView: 3
 				},
 				1280: {
 					spaceBetween: 19,
