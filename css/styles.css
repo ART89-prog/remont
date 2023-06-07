@@ -767,13 +767,120 @@ header .btn span {
 }
 .about_img {
     width: 486px;
-    height: 417px;
+    height: 471px;
 }
 .about_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+
+
+
+.callback {
+    padding: 44px 0 92px;
+}
+.cont {
+}
+.callback_wrap {
+    display: flex;
+}
+.callback_info {
+    width: calc(100% - 532px);
+}
+.callback_title {
+    text-align: start;
+    margin-bottom: 33px;
+}
+.title {
+}
+.callback_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(51, 51, 51, 0.7);
+    margin-bottom: 25px;
+}
+.callback form {
+    max-width: 440px;
+}
+.callback form .line {
+    margin-bottom: 40px;
+    width: 100%;
+}
+.callback form .line .field {
+    width: 100%;
+}
+.callback form .line .field input {
+    border: none;
+    border-bottom: 1px solid #024873;
+    padding-bottom: 8px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    width: 100%;
+}
+.callback form .line .field textarea {
+    
+}
+.about_img {
+}
+
+
+
+.steps {
+    padding: 76px 0 86px;
+    background: rgba(190, 141, 85, 0.03);
+}
+.steps_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -18px;
+    margin-bottom: -20px;
+}
+.steps_items > * {
+    width: calc(100%/4 - 18px);
+    margin-left: 18px;
+    margin-bottom: 20px;
+}
+.steps_item-icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(190, 141, 85, 0.3);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.steps_item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin-bottom: 22px;
+}
+.steps_item-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(51, 51, 51, 0.6);
+}
+.steps_item-icon:nth-child(1):after {
+    position: absolute;
+    content: "";
+    width: 266px;
+    height: 59px;
+    right: 0;
+    top: 0;
+    background: url(../images/steps_bg1.png);
+}
+
 
 
 
@@ -796,7 +903,9 @@ header .btn span {
 
 
 
-
+.faq {
+    padding: 75px 0 83px;
+}
 .accordion_item {
     margin-bottom: 27px; 
     transition: all 0.4s;   
