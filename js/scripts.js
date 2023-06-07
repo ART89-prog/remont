@@ -157,6 +157,53 @@ $(() => {
 	})
 
 
+	const projectSliders = [],
+	project = document.querySelectorAll('.project .swiper-container')
+
+	project.forEach(function (el, i) {
+		el.classList.add('project_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			spaceBetween: 19,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			preloadImages: false,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},			
+
+			breakpoints: {
+				0: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				},
+				480: {
+					spaceBetween: 0,
+					spaceBetween: 1,
+				},
+				768: {
+					spaceBetween: 15,
+					slidesPerView: 2
+				},
+				1023: {
+					spaceBetween: 15,
+					slidesPerView: 3
+				},
+				1280: {
+					spaceBetween: 19,
+					slidesPerView: 3
+				}
+			}
+		}
+
+		projectSliders.push(new Swiper('.project_s' + i, options))
+	})
+
+
 
 
 
