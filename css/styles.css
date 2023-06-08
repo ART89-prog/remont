@@ -891,7 +891,16 @@ header .btn span {
 .callback {
     padding: 61px 0 32px;
 }
-
+.callback_img {
+    width: 531px;
+    height: 497px;
+    margin: 0 auto;
+}
+.callback_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .callback_wrap {
     display: flex;
     margin-left: 87px;

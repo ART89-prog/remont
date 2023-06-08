@@ -227,6 +227,9 @@
     .accordion_item .head {
         align-items: center;
     }
+    .repair_item-info {
+        padding: 0 10px 27px;
+    }
   
    
 

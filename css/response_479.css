@@ -21,6 +21,35 @@
     form button {
         max-width: 100%;
     }
+    .steps_item-title {
+        margin-left: 25px;
+    }
+    .about_img {
+        width: 300px;
+        height: 295px;
+    }
+    .callback_img {
+        width: 300px;
+        height: 285px;
+    }
+    .repair {
+        margin-top: 40px;
+        padding-top: 40px;
+        margin-bottom: 10px;
+    }
+    .about {
+        margin-bottom: 40px;
+        padding-top: 40px;
+    }
+    .project {
+        padding: 40px 0 40px;
+    }
+    .steps {
+        padding: 40px 0 40px;
+    }
+    .faq {
+        padding: 40px 0 40px;
+    }
 
 
 }
