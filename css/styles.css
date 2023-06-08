@@ -301,6 +301,9 @@ button {
     Header
 ------------*/
 
+body.menu_open {
+    overflow: hidden;
+}
 header .mob_menu_btn {
     display: none;
     margin-right: 0px;
@@ -1515,10 +1518,10 @@ footer .menu .item a:hover {
 
 
 .carousel__button.is-close {
-    display: none;
 }
 .modal_slider {
     max-width: 786px;
+    width: 100%;
     display: none;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

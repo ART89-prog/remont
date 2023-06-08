@@ -99,9 +99,10 @@
         height: 295px;
     }
     .modal_slider {
-        padding: 15px;
+        padding: 12px;
     }
 
+    
     .first_section-title {
         font-size: 20px;
         line-height: 24px;
@@ -171,6 +172,11 @@
     .about_item-icon {
         width: 80px;
         height: 80px;
+        padding: 20px;
+    }
+    .about_item-icon img {
+        width: 100%;
+        height: 100%;
     }
     .callback_img {
         width: 390px;
@@ -215,6 +221,14 @@
     }
     .faq {
         padding: 50px 0 50px;
+    }
+    .about_item-title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 15px;
+    }
+    .project_item-link {
+        font-size: 14px;
     }
 
     

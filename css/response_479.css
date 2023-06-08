@@ -50,6 +50,27 @@
     .faq {
         padding: 40px 0 40px;
     }
+    .project_item-link,
+    .repair_item-link {
+        max-width: 100%;
+    }
+    .first_section .link {
+        margin-left: 0;
+    }
+    .modal_slider-info {
+        margin-top: 20px;
+    }
+    .modal_slider-text {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .modal_slider-btn {
+        font-size: 14px;
+        width: 100%;
+    }
+    .modal_slider ul li {
+        font-size: 14px;
+    }
 
 
 }
