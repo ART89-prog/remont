@@ -107,7 +107,7 @@
 								<div class="info">
 									<div class="first_section-title">Ремонт коммерческих помещений</div>
 									<ul>
-										<li>под ключ за 30 дней</li>
+										<li>под ключ за <span>30</span> дней</li>
 										<li>в Москве и МО с гарантией</li>
 										<li>гарантией на 2 года без повышение цен</li>
 									</ul>
@@ -156,7 +156,7 @@
 								<div class="info">
 									<div class="first_section-title">Ремонт коммерческих помещений</div>
 									<ul>
-										<li>под ключ за 30 дней</li>
+										<li>под ключ за <span>30</span> дней</li>
 										<li>в Москве и МО с гарантией</li>
 										<li>гарантией на 2 года без повышение цен</li>
 									</ul>
@@ -205,7 +205,7 @@
 								<div class="info">
 									<div class="first_section-title">Ремонт коммерческих помещений</div>
 									<ul>
-										<li>под ключ за 30 дней</li>
+										<li>под ключ за <span>30</span> дней</li>
 										<li>в Москве и МО с гарантией</li>
 										<li>гарантией на 2 года без повышение цен</li>
 									</ul>
@@ -515,7 +515,7 @@
 							</form>
 						</div>
 						<div class="about_img">
-							<img src="images/about_img.png" alt="">
+							<img src="images/callback_img.png" alt="">
 						</div>
 					</div>					
 				</div>
@@ -589,7 +589,7 @@
 							</div>
 						</div>
 
-						<div class="accordion_item">
+						<div class="accordion_item active">
 							<div class="head">
 								<div class="title">КАКОЙ ПОРЯДОК РЕМОНТА?</div>							
 								<span>+</span>								
@@ -636,11 +636,37 @@
 
 
 			<section class="map_block">
-				<div class="cont">
-							
-				</div>
+				
 				<div class="map_wrap">
 					<div id="map"></div>
+					<div class="cont">
+						<div class="contacts_items">
+							<a href="tel:79663559249" class="contacts_item">
+								<div class="contacts_item-icon">
+									<img src="images/contact_icon1.svg" alt="">
+								</div>
+								<div class="contacts_item-text phone">+7 966 <span>355-92-49</span></div>
+							</a>
+							<div class="contacts_item">
+								<div class="contacts_item-icon">
+									<img src="images/contact_icon2.svg" alt="">
+								</div>
+								<div class="contacts_item-text">Режим работы: <span>Пн-Вс 9:00 -18:00</span></div>
+							</div>
+							<a href="mailto:pocta.revttrov@gmail.com" class="contacts_item">
+								<div class="contacts_item-icon">
+									<img src="images/contact_icon3.svg" alt="">
+								</div>
+								<div class="contacts_item-text">Почта: <span>pocta.revttrov</span>@gmail.com</div>
+							</a>
+							<div class="contacts_item">
+								<div class="contacts_item-icon">
+									<img src="images/contact_icon4.svg" alt="">
+								</div>
+								<div class="contacts_item-text">Адрес: <span>улица Дудкино5/6с4, Большая Дмитровская</span> Москва</div>
+							</div>
+						</div>	
+					</div>
 				</div>			
 			</section>
 			
@@ -648,11 +674,11 @@
 		
 
 			<footer>
-				<div class="cont">
-					<div class="footer_top">
-						<div class="header_left">
-							<a href="index.html" class="header_logo">
-								<img src="images/logo.png" alt="">
+				<div class="footer_top">
+					<div class="cont">					
+						<div class="footer_left">
+							<a href="index.html" class="footer_logo">
+								<img src="images/logo_footer.png" alt="">
 							</a>
 							<nav class="menu">							                             
 								<div class="item">
@@ -669,8 +695,8 @@
 								</div>
 							</nav>
 						</div>
-						<div class="header_right">
-							<div class="header_soc">
+						<div class="footer_right">
+							<div class="footer_soc">
 								<a href="#">
 									<img src="images/whatsapp.svg" alt="">
 								</a>
@@ -681,21 +707,18 @@
 									<img src="images/telegram.svg" alt="">
 								</a>
 							</div>
-							<div class="header_contact">
-								<a href="tel:79663559249" class="header_contact-phone">+7 966 355-92-49</a>
-								<a href="mailto:pocta.revttrov@gmail.com" class="header_contact-email">pocta.revttrov@gmail.com</a>
+							<div class="footer_contact">
+								<a href="tel:79663559249" class="footer_contact-phone">+7 966 <span>355-92-49</span></a>
+								<a href="mailto:pocta.revttrov@gmail.com" class="footer_contact-email">pocta.revttrov@gmail.com</a>
 							</div>
-							<button class="btn modal_link" data-content="#modal_callback">
-								<img src="images/phone.svg" alt="">
-								<span>Заказать звонок</span>
-							</button>
 						</div>
 					</div>
-
-					<div class="footer_bottom">
+				</div>
+				<div class="footer_bottom">
+					<div class="cont">
 						<div class="footer_copy">© 2023  все права защищены</div>
-						<a href="#" class="footer_politic">Политика конфиденциальности</a>
-					</div>
+						<a href="#" class="footer_politic">Политика конфиденциальности</a>	
+					</div>					
 				</div>
 			</footer>
 
@@ -774,196 +797,31 @@
 		<script src="https://api-maps.yandex.ru/2.1.75/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 		<script>
 			$(window).on('load', () => {
-				ymaps.ready(function () {
-					var myMap = new ymaps.Map('map', {
-						center: [53.902512, 27.561481],
-						zoom: 7
-					}, {
-						searchControlProvider: 'yandex#search'
-					}),
-
-						myPlacemark1 = new ymaps.Placemark([53.902512, 27.561481], {
-							hintContent: ''
-						}, {
-							iconLayout: 'default#imageWithContent',
-							iconImageHref: 'images/map.svg',
-							iconImageSize: [35, 49],
-							iconImageOffset: [35, -43]
-						});
-
-					myPlacemark2 = new ymaps.Placemark([55.183672, 30.204791], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark3 = new ymaps.Placemark([54.510741, 30.429586], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark4 = new ymaps.Placemark([53.894548, 30.330654], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark5 = new ymaps.Placemark([52.424160, 31.014272], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark6 = new ymaps.Placemark([52.371551, 30.386557], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark7 = new ymaps.Placemark([52.892256, 30.037813], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark8 = new ymaps.Placemark([52.633051, 29.748483], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark9 = new ymaps.Placemark([53.145592, 29.225538], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-
-					myPlacemark10 = new ymaps.Placemark([54.224069, 28.511755], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark11 = new ymaps.Placemark([54.094370, 28.321572], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark12 = new ymaps.Placemark([52.792919, 27.543739], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark13 = new ymaps.Placemark([53.027639, 27.552102], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark14 = new ymaps.Placemark([54.307332, 26.838930], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark15 = new ymaps.Placemark([53.132341, 26.017609], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark16 = new ymaps.Placemark([53.891662, 25.302245], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark17 = new ymaps.Placemark([53.162947, 24.463991], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myPlacemark18 = new ymaps.Placemark([53.677834, 23.829529], {
-						hintContent: ''
-					}, {
-						iconLayout: 'default#imageWithContent',
-						iconImageHref: 'images/map.svg',
-						iconImageSize: [35, 49],
-						iconImageOffset: [35, -43]
-					});
-
-					myMap.geoObjects
-						.add(myPlacemark1)
-						.add(myPlacemark2)
-						.add(myPlacemark3)
-						.add(myPlacemark4)
-						.add(myPlacemark5)
-						.add(myPlacemark6)
-						.add(myPlacemark7)
-						.add(myPlacemark8)
-						.add(myPlacemark9)
-						.add(myPlacemark10)
-						.add(myPlacemark11)
-						.add(myPlacemark12)
-						.add(myPlacemark13)
-						.add(myPlacemark14)
-						.add(myPlacemark16)
-						.add(myPlacemark17)
-						.add(myPlacemark18);
-				});
+				ymaps.ready(() => {
+					let myMap = new ymaps.Map('map', {
+						center: [55.796137,37.587344],
+						zoom: 16,
+						controls: []
+					})
+							
+					// Кастомный маркер
+					let myPlacemark = new ymaps.Placemark([55.796137,37.587344], {}, {
+						iconLayout : 'default#image',
+						iconImageHref : 'images/marker.svg',
+						iconImageSize : [32, 43],
+						/*iconImageOffset : [-116, -172]*/
+					})
+	
+					myMap.geoObjects.add(myPlacemark)
+	
+					myMap.controls.add('zoomControl', {
+						position : {
+							right : '20px',
+							top   : '20px'
+						}
+					})
+					myMap.behaviors.disable('scrollZoom')
+				})
 			})
 		</script>
 
