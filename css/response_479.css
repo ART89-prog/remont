@@ -18,6 +18,9 @@
         padding-top: 30px;
         padding-bottom: 32px;
     }
+    form button {
+        max-width: 100%;
+    }
 
 
 }

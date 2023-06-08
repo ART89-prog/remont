@@ -996,6 +996,7 @@ form button:hover {
 
 .project_item-img img {
     display: block;
+    width: 100%;
 }
 
 .project_item-info {
@@ -1671,58 +1672,13 @@ footer .menu .item a:hover {
     background: #fff;
 }
 
-@media (max-width: 767.98px) {
-    .slider__flex {
-        flex-direction: column-reverse;
-    }
-
-    .slider__col {
-        flex-direction: row;
-        align-items: start;
-        margin-right: 0;
-        margin-top: 8px;
-        width: 100%;
-    }
-
-    .slider__images {
-        width: 100%;
-    }
-
-    .slider__thumbs {
-        height: 90px;
-        width: 100%;
-    }
-
-    .slider__prev,
-    .slider__next {
-        height: 25px;
-        width: 25px;
-    }
-
-    .slider .swiper-wrapper {
-        display: flex;
-        width: calc(100%/3 - 8px);
-    }
-    .slider__image {
-        margin-left: 0;
-    }
-
-    .slider__images {
-        height: 295px;
-    }
-    .modal_slider {
-        padding: 15px;
-    }
-}
-
-
 
 .modal_callback {
     max-width: 577px;
     padding: 71px 68px 72px;
     background: #FFFFFF;
     position: relative;
-    /* display: none; */
+    display: none;
 }
 .modal_callback:before {
     position: absolute;
@@ -1732,6 +1688,7 @@ footer .menu .item a:hover {
     bottom: 0;
     left: 0;
     background: url(../images/modal_bg1.png);
+    z-index: -1;
 }
 .modal_callback:after {
     position: absolute;
@@ -1741,6 +1698,7 @@ footer .menu .item a:hover {
     top: 0;
     right: 0;
     background: url(../images/modal_bg2.png);
+    z-index: -1;
 }
 .modal_callback-title {
     font-weight: 600;

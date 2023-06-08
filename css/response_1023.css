@@ -152,6 +152,7 @@
     }
     .first_section-items > * {
         width: calc(212px - 10px);
+        flex-shrink: 0;
     }
     .first_section ul {
         margin-left: 0;
