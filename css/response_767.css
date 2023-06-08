@@ -18,6 +18,47 @@
     .footer_politic {
         display: none;
     }
+    .contacts_items {
+        background: url(../images/contact_bg_mob.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 360px;
+        height: 341px;
+        top: 37%;
+        left: 0;
+        padding: 121px 34px;
+    }
+    .map_wrap {
+        height: 567px;
+    }
+    .contacts_item-text.phone {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .contacts_item-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .contacts_item-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        padding: 5px;
+    }
+    .contacts_item-icon img {
+        width: 100%;
+    }
+    .contacts_item + .contacts_item {
+        margin-top: 9px;
+    }
+    .map_wrap .cont {
+        height: 100%;
+    }
+    
+
+
 
 
 

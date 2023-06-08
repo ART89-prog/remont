@@ -1226,6 +1226,7 @@ footer .menu .item a:hover {
     align-items: center;
     justify-content: center;
     margin-right: 24px;
+    flex-shrink: 0;
 }
 .contacts_item-text {
     font-weight: 500;

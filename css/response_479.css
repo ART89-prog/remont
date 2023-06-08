@@ -3,6 +3,21 @@
     .steps_item-icon {
         margin: 0 auto -8px;
     }
+    .footer_top .cont {
+        flex-direction: column;
+    }
+    .footer_logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .footer_left {
+        width: 100%;
+        justify-content: center;
+    }
+    .footer_top {
+        padding-top: 30px;
+        padding-bottom: 32px;
+    }
 
 
 }
