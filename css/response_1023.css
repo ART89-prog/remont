@@ -214,6 +214,18 @@
     .footer_logo {
         margin-left: 0;
     }
+    .title {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 22px;
+    }
+    .accordion_item .head .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .accordion_item .head {
+        align-items: center;
+    }
   
    
 
