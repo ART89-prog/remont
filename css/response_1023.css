@@ -101,12 +101,7 @@
         z-index: 999;
         position: absolute;
     }
-    .mob_menu_btn {
-        width: 60px;
-    }
-    .mob_menu_btn img {
-        width: 60px;
-    }
+
 
     .header_contact-phone {
         font-size: 18px;
@@ -145,6 +140,15 @@
 
     .first_section-items {
         overflow: auto;
+    }
+    .first_section-items::-webkit-scrollbar { 
+        width: 0;
+    }
+    .first_section-items { 
+        -ms-overflow-style: none;
+    }
+    .first_section-items { 
+        overflow: -moz-scrollbars-none; 
     }
     .first_section-items > * {
         width: calc(212px - 10px);
