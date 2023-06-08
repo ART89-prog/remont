@@ -142,6 +142,13 @@
         width: 100%;
         height: 100%;
     }
+
+    .first_section-items {
+        overflow: auto;
+    }
+    .first_section-items > * {
+        width: calc(212px - 10px);
+    }
   
    
 

@@ -472,8 +472,9 @@ header .btn span {
     background-position: 50%;
     background-size: cover;
 }
-.first_section .cont {
+.first_section-box {
     padding: 139px 50px 35px;
+    margin-bottom: 215px;
 }
 .first_section .info {
     width: 805px;
@@ -483,7 +484,7 @@ header .btn span {
     background: rgba(2, 72, 115, 0.6);
     border: 1px solid #FFFBFB;
     position: relative;
-    margin: 0 auto 89px;
+    margin: 0 auto;
 }
 .first_section .info::before {
     position: absolute;
@@ -556,10 +557,12 @@ header .btn span {
 }
 .first_section-items {
     display: flex;
-    flex-wrap: wrap;
     margin-left: -10px;
     margin-bottom: -10px;
     max-width: 1100px;
+    z-index: 555;
+    position: relative;
+    margin-top: -134px;
 }
 .first_section-items > * {
     width: calc(100%/5 - 10px);
@@ -617,6 +620,7 @@ header .btn span {
     margin-bottom: 34px;
 }
 .repair {
+    margin-top: 150px;
     margin-bottom: 210px;
 }
 .repair .cont {
