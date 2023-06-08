@@ -28,7 +28,7 @@
         height: 341px;
         top: 37%;
         left: 0;
-        padding: 121px 34px;
+        padding: 121px 34px 25px;
     }
     .map_wrap {
         height: 567px;
@@ -55,6 +55,7 @@
     }
     .map_wrap .cont {
         height: 100%;
+        position: static;
     }
     .first_section-box {
         padding: 74px 15px 35px;

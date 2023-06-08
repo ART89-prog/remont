@@ -22,7 +22,7 @@
         max-width: 100%;
     }
     .steps_item-title {
-        margin-left: 25px;
+        text-align: center;
     }
     .about_img {
         width: 300px;
