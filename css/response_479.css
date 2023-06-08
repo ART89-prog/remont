@@ -1,6 +1,8 @@
 @media (max-width: 479px) {
 
-    
+    .steps_item-icon {
+        margin: 0 auto -8px;
+    }
 
 
 }

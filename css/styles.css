@@ -584,7 +584,12 @@ header .btn span {
     color: #024873;
     margin-left: 8px;
 }
-
+.first_section .swiper-button-next {
+    right: 35px;
+}
+.first_section .swiper-button-prev {
+    left: 35px;
+}
 .swiper-button-next, 
 .swiper-button-prev {
     width: 60px;
@@ -647,11 +652,11 @@ header .btn span {
     box-shadow: 0px 10px 20px rgba(23, 39, 57, 0.07);
     border-radius: 50%;   
 }
-.swiper-button-next {
-    right: 35px;
+.repair .swiper-button-next {
+    right: -43px;
 }
-.swiper-button-prev {
-    left: 35px;
+.repair .swiper-button-prev {
+    left: -43px;
 }
 .repair .swiper-button-next img {
     position: absolute;

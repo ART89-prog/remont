@@ -9,6 +9,18 @@
     header .btn {
         width: 170px;
     }
+    .repair .swiper-button-prev {
+        left: -16px;
+    }
+    .repair .swiper-button-next {
+        right: -16px;
+    }
+    .callback_wrap {
+        margin-left: 0;
+    }
+    footer .menu .item a {
+        margin-right: 15px;
+    }
 
 
 

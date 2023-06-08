@@ -1,6 +1,23 @@
 @media print, (max-width: 767px) {
 
-
+    .steps_items {
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .steps_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .steps_item + .steps_item {
+        margin-top: 24px;
+    }
+    footer .menu {
+        display: none;
+    }
+    .footer_politic {
+        display: none;
+    }
 
 
 
