@@ -1,21 +1,21 @@
 $(() => {
 
 	// Основной слайдер на главной
-	// if ($('.first_section .swiper-container').length) {
-	// 	new Swiper('.first_section .swiper-container', {
-	// 		loop: true,
-	// 		speed: 750,
-	// 		watchSlidesVisibility: true,
-	// 		slideActiveClass: 'active',
-	// 		slideVisibleClass: 'visible',
-	// 		spaceBetween: 0,
-	// 		slidesPerView: 1,
-	// 		navigation: {
-	// 			nextEl: '.swiper-button-next',
-	// 			prevEl: '.swiper-button-prev'
-	// 		}
-	// 	})
-	// }
+	if ($('.first_section .swiper-container').length) {
+		new Swiper('.first_section .swiper-container', {
+			loop: true,
+			speed: 750,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 1,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+	}
 
 	// Ширина окна для ресайза
 	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
@@ -110,96 +110,96 @@ $(() => {
 
 
 
-	// const repairSliders = [],
-	// 	repair = document.querySelectorAll('.repair .swiper-container')
+	const repairSliders = [],
+		repair = document.querySelectorAll('.repair .swiper-container')
 
-	// repair.forEach(function (el, i) {
-	// 	el.classList.add('repair_s' + i)
+	repair.forEach(function (el, i) {
+		el.classList.add('repair_s' + i)
 
-	// 	let options = {
-	// 		loop: true,
-	// 		speed: 500,
-	// 		watchSlidesProgress: true,
-	// 		slideActiveClass: 'active',
-	// 		slideVisibleClass: 'visible',
-	// 		preloadImages: false,
-	// 		navigation: {
-	// 			nextEl: '.swiper-button-next',
-	// 			prevEl: '.swiper-button-prev'
-	// 		},
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			preloadImages: false,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
 
-	// 		breakpoints: {
-	// 			0: {
-	// 				spaceBetween: 0,
-	// 				slidesPerView: 1
-	// 			},
-	// 			480: {
-	// 				spaceBetween: 15,
-	// 				spaceBetween: 2,
-	// 			},
-	// 			768: {
-	// 				spaceBetween: 15,
-	// 				slidesPerView: 2
-	// 			},
-	// 			1023: {
-	// 				spaceBetween: 15,
-	// 				slidesPerView: 3
-	// 			},
-	// 			1280: {
-	// 				spaceBetween: 19,
-	// 				slidesPerView: 3
-	// 			}
-	// 		}
-	// 	}
+			breakpoints: {
+				0: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				},
+				480: {
+					spaceBetween: 15,
+					spaceBetween: 2,
+				},
+				768: {
+					spaceBetween: 15,
+					slidesPerView: 2
+				},
+				1023: {
+					spaceBetween: 15,
+					slidesPerView: 3
+				},
+				1280: {
+					spaceBetween: 19,
+					slidesPerView: 3
+				}
+			}
+		}
 
-	// 	repairSliders.push(new Swiper('.repair_s' + i, options))
-	// })
+		repairSliders.push(new Swiper('.repair_s' + i, options))
+	})
 
 
-	// const projectSliders = [],
-	// 	project = document.querySelectorAll('.project .swiper-container')
+	const projectSliders = [],
+		project = document.querySelectorAll('.project .swiper-container')
 
-	// project.forEach(function (el, i) {
-	// 	el.classList.add('project_s' + i)
+	project.forEach(function (el, i) {
+		el.classList.add('project_s' + i)
 
-	// 	let options = {
-	// 		loop: true,
-	// 		speed: 500,
-	// 		watchSlidesProgress: true,
-	// 		slideActiveClass: 'active',
-	// 		slideVisibleClass: 'visible',
-	// 		preloadImages: false,
-	// 		navigation: {
-	// 			nextEl: '.swiper-button-next',
-	// 			prevEl: '.swiper-button-prev'
-	// 		},
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			preloadImages: false,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
 
-	// 		breakpoints: {
-	// 			0: {
-	// 				spaceBetween: 0,
-	// 				slidesPerView: 1
-	// 			},
-	// 			480: {
-	// 				spaceBetween: 0,
-	// 				spaceBetween: 1,
-	// 			},
-	// 			768: {
-	// 				spaceBetween: 15,
-	// 				slidesPerView: 2
-	// 			},
-	// 			1023: {
-	// 				spaceBetween: 15,
-	// 				slidesPerView: 3
-	// 			},
-	// 			1280: {
-	// 				spaceBetween: 19,
-	// 				slidesPerView: 3
-	// 			}
-	// 		}
-	// 	}
+			breakpoints: {
+				0: {
+					spaceBetween: 0,
+					slidesPerView: 1
+				},
+				480: {
+					spaceBetween: 0,
+					spaceBetween: 1,
+				},
+				768: {
+					spaceBetween: 15,
+					slidesPerView: 2
+				},
+				1023: {
+					spaceBetween: 15,
+					slidesPerView: 3
+				},
+				1280: {
+					spaceBetween: 19,
+					slidesPerView: 3
+				}
+			}
+		}
 
-	// 	projectSliders.push(new Swiper('.project_s' + i, options))
-	// })
+		projectSliders.push(new Swiper('.project_s' + i, options))
+	})
 
 
 
