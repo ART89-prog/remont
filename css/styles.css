@@ -1408,7 +1408,9 @@ footer .menu .item a:hover {
 
 
 
-
+.modal_slider {
+    max-width: 786px;
+}
 .slider {
     padding: 32px;
     color: #fff;
@@ -1483,6 +1485,9 @@ footer .menu .item a:hover {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+  .slider .swiper-wrapper {
+    display: block;
   }
   @media (max-width: 767.98px) {
     .slider__flex {
