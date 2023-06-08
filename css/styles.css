@@ -22,8 +22,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    /* scroll-margin-top: 100px; */
 }
 
 *:before,
@@ -107,10 +105,10 @@ input[type=number] {
     Global styles
 -------------------*/
 :root {
-    --bg: #fff;
+    --bg: #BE8D55;
     --scroll_width: 17px;
-    --text_color: #242424;
-    --font_size: 18px;
+    --text_color: #333;
+    --font_size: 14px;
     --font_size_title: 28px;
     --font_family: 'Inter';
 }
@@ -209,7 +207,7 @@ button {
     min-width: 360px;
     min-height: 100%;
 
-    background: var(--bg);
+    background: #fff;
 }
 
 
@@ -353,22 +351,19 @@ header .menu .item a {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #333333;
+    color: var(--text_color);
     transition: all .4s;
     white-space: nowrap;
     margin-right: 42px;
 }
 
 header .menu .item a:hover {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
-header .menu .item a:hover {
-    color: var(--text_color);
-}
 
 .header .menu .item a:active {
-    color: #FF5757;
+    color: var(--bg);
 }
 
 .header_left {
@@ -399,8 +394,13 @@ header .menu .item a:hover {
     display: block;
     text-decoration: none;
     margin-right: 10px;
+    top: 0;
+    position: relative;
+    transition: all .4s;
 }
-
+.header_soc a:hover {
+    top: -7px;
+}
 .header_contact {
     margin-right: 15px;
     display: flex;
@@ -415,15 +415,23 @@ header .menu .item a:hover {
     margin-bottom: 4px;
     text-decoration: none;
     white-space: nowrap;
+    transition: all .4s;
+}
+.header_contact-phone:hover {
+    color: var(--bg);
 }
 
 .header_contact-email {
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 17px;
     color: #000000;
     text-decoration: none;
     white-space: nowrap;
+    transition: all .4s;
+}
+.header_contact-email:hover {
+    color: var(--bg);
 }
 
 header .btn {
@@ -434,9 +442,13 @@ header .btn {
     width: 203px;
     height: 45px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 17px;
     color: #FFFFFF;
+    transition: all .4s;
+}
+header .btn:hover {
+    background: #0584d3;
 }
 
 header .btn span {
@@ -509,7 +521,7 @@ header .btn span {
     z-index: 2;
     position: relative;
     font-weight: 700;
-    font-size: 28px;
+    font-size: var(--font_size_title);
     line-height: 34px;
     text-align: center;
     text-transform: uppercase;
@@ -569,7 +581,13 @@ header .btn span {
     text-decoration: none;
     z-index: 2;
     position: relative;
+    transition: all .4s;
 }
+.first_section .link:hover {
+    background: #024873;
+    color: #fff;
+}
+
 
 .first_section-items {
     display: flex;
@@ -643,15 +661,16 @@ header .btn span {
 .title {
     text-align: center;
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--font_size_title);
     line-height: 34px;
-    color: #333333;
+    color: var(--text_color);
     margin-bottom: 34px;
 }
 
 .repair {
-    margin-top: 150px;
-    margin-bottom: 210px;
+    margin-top: 50px;
+    padding-top: 100px;
+    margin-bottom: 110px;
 }
 
 .repair .cont {
@@ -745,7 +764,7 @@ header .btn span {
 
 .repair_item-info {
     margin: 0 19px 19px;
-    border: 1px solid #BE8D55;
+    border: 1px solid var(--bg);
     border-top: none;
     padding: 0 3px 30px;
 }
@@ -756,7 +775,7 @@ header .btn span {
     font-size: 22px;
     line-height: 27px;
     text-transform: uppercase;
-    color: #333333;
+    color: var(--text_color);
     margin-bottom: 10px;
     text-align: center;
 }
@@ -765,7 +784,7 @@ header .btn span {
     max-width: 242px;
     height: 50px;
     width: 100%;
-    background: #BE8D55;
+    background: var(--bg);
     font-weight: 500;
     font-size: 16px;
     line-height: 50px;
@@ -774,11 +793,17 @@ header .btn span {
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
+    transition: all .4s;
+    border: 2px solid transparent;
 }
-
+.repair_item-link:hover {
+    border: 2px solid var(--bg);
+    background: #fff;
+    color: var(--text_color);
+}
 .repair_item-text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 22px;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 25px;
@@ -788,6 +813,7 @@ header .btn span {
 
 .about {
     margin-bottom: 128px;
+    padding-top: 100px;
 }
 
 .about_wrap {
@@ -813,7 +839,7 @@ header .btn span {
 }
 
 .about_text span {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 .about_items {
@@ -889,24 +915,24 @@ header .btn span {
     margin-bottom: 32px;
 }
 
-.callback form {
+form {
     max-width: 440px;
 }
 
-.callback form .line {
+form .line {
     margin-bottom: 40px;
     width: 100%;
 }
 
-.callback form .line .field {
+form .line .field {
     width: 100%;
 }
 
-.callback form .line .field input {
+form .line .field input {
     border: none;
     border-bottom: 1px solid #024873;
     padding-bottom: 7px;
-    font-family: 'Inter';
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -914,8 +940,8 @@ header .btn span {
     width: 100%;
 }
 
-.callback form .line .field textarea {
-    font-family: 'Inter';
+form .line .field textarea {
+    font-family: var(--font_family);
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
@@ -927,7 +953,7 @@ header .btn span {
     height: 35px;
 }
 
-.callback form button {
+form button {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -935,8 +961,15 @@ header .btn span {
     max-width: 242px;
     height: 50px;
     width: 100%;
-    background: #BE8D55;
+    background: var(--bg);
+    transition: all .4s;
+    border: 2px solid transparent;
 }
+form button:hover {
+    border: 2px solid var(--bg);
+    background: #fff;
+    color: var(--text_color);
+}   
 
 .about_img {
     width: 486px;
@@ -980,7 +1013,7 @@ header .btn span {
 
 .project_item-text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 22px;
     color: rgba(0, 0, 0, 0.75);
     margin-bottom: 40px;
@@ -990,7 +1023,7 @@ header .btn span {
     max-width: 242px;
     height: 50px;
     width: 100%;
-    background: #BE8D55;
+    background: var(--bg);
     font-weight: 500;
     font-size: 16px;
     line-height: 50px;
@@ -999,7 +1032,14 @@ header .btn span {
     text-decoration: none;
     text-align: center;
     margin: 0 auto;
+    transition: all .4s;
+    border: 2px solid transparent;
 }
+.project_item-link:hover {
+    border: 2px solid var(--bg);
+    background: #fff;
+    color: var(--text_color);
+}   
 
 .project .swiper-container {
     overflow: visible !important;
@@ -1104,7 +1144,7 @@ header .btn span {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #333333;
+    color: var(--text_color);
     margin-bottom: 22px;
 }
 
@@ -1163,7 +1203,7 @@ header .btn span {
 
 .footer_copy {
     font-weight: 300;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 17px;
     display: flex;
     align-items: flex-end;
@@ -1173,7 +1213,7 @@ header .btn span {
 
 .footer_politic {
     font-weight: 300;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 17px;
     text-decoration-line: underline;
     color: #FFFFFF;
@@ -1181,7 +1221,7 @@ header .btn span {
 }
 
 .footer_politic:hover {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 .footer_top {
@@ -1214,11 +1254,11 @@ footer .menu .item a {
 }
 
 footer .menu .item a:hover {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 .footer_bottom {
-    background: #333333;
+    background: var(--text_color);
     padding-bottom: 23px;
     padding-top: 22px;
 }
@@ -1247,6 +1287,12 @@ footer .menu .item a:hover {
     display: block;
     text-decoration: none;
     margin-right: 10px;
+    top: 0;
+    position: relative;
+    transition: all .4s;
+}
+.footer_soc a:hover {
+    top: -7px;
 }
 
 .footer_contact {
@@ -1268,16 +1314,16 @@ footer .menu .item a:hover {
 }
 
 .footer_contact-phone:hover {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 .footer_contact-phone span {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 .footer_contact-email {
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 17px;
     color: #fff;
     text-decoration: none;
@@ -1286,7 +1332,7 @@ footer .menu .item a:hover {
 }
 
 .footer_contact-email:hover {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 
@@ -1353,7 +1399,7 @@ footer .menu .item a:hover {
 }
 
 .contacts_item-text span {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 .contacts_item-text.phone {
@@ -1386,14 +1432,14 @@ footer .menu .item a:hover {
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    background: #BE8D55;
+    background: var(--bg);
     padding: 21px 20px 17px 21px;
     border: 4px solid transparent;
 }
 
 .accordion_item .head span {
     font-weight: 600;
-    font-size: 28px;
+    font-size: var(--font_size_title);
     line-height: 28px;
     color: #FFFFFF;
 }
@@ -1426,12 +1472,12 @@ footer .menu .item a:hover {
 }
 
 .accordion .accordion_item.active .head span {
-    color: #BE8D55;
+    color: var(--bg);
 }
 
 .accordion .accordion_item.active .head {
     background: rgba(217, 217, 217, 0.2);
-    border: 4px solid #BE8D55;
+    border: 4px solid var(--bg);
     margin-bottom: 29px;
 }
 
@@ -1454,98 +1500,6 @@ footer .menu .item a:hover {
 .lazyload {
     transition: opacity .5s linear;
     opacity: 0;
-}
-
-
-.modal_callback {
-    display: none;
-    background: #FFFFFF;
-    padding: 40px;
-    max-width: 388px;
-    width: 100%;
-}
-
-.modal_form .btn {
-    width: 100%;
-    height: 48px;
-}
-
-.modal_callback-title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    color: var(--text_color);
-    margin-bottom: 8px;
-}
-
-.modal_callback-text {
-    font-family: var(--font_family2);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #545454;
-    margin-bottom: 41px;
-}
-
-.modal_form .line {
-    margin-bottom: 28px;
-    width: 100%;
-}
-
-.modal_form .line .field {
-    width: 100%;
-}
-
-.form_politic {
-    margin-top: 30px;
-    font-family: var(--font_family2);
-    font-weight: 500;
-    font-size: 11.5px;
-    line-height: 15px;
-    color: #666666;
-}
-
-.form_politic a {
-    text-decoration: none;
-    color: #FF5757;
-    transition: all .4s;
-}
-
-.form_politic a:hover {
-    text-decoration: underline;
-}
-
-.modal_form input {
-    border: none;
-    border-bottom: 1px solid #A6A6A6;
-    padding-bottom: 12px;
-    font-family: var(--font_family2);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #545454;
-    width: 100%;
-}
-
-.modal_form textarea {
-    border: none;
-    border-bottom: 1px solid #A6A6A6;
-    height: 30px;
-    font-family: var(--font_family2);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #545454;
-    width: 100%;
-    resize: none;
-}
-
-.fancybox__content>.carousel__button.is-close {
-    top: 0;
-}
-
-.modal_callback .modal_callback-mob {
-    display: none;
 }
 
 
@@ -1675,7 +1629,7 @@ footer .menu .item a:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #333333;
+    color: var(--text_color);
     margin-bottom: 16px;
     display: flex;
     align-items: flex-start;
@@ -1693,7 +1647,7 @@ footer .menu .item a:hover {
 .modal_slider-text {
     margin-top: 27px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--font_size);
     line-height: 22px;
     color: rgba(0, 0, 0, 0.75); 
     margin-bottom: 39px;
@@ -1701,13 +1655,20 @@ footer .menu .item a:hover {
 .modal_slider-btn {
     width: 242px;
     height: 50px;
-    background: #BE8D55;
+    background: var(--bg);
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
     margin: 0 auto;
     display: block;
+    transition: all .4s;
+    border: 2px solid transparent;
+}
+.modal_slider-btn:hover {
+    border: 2px solid var(--bg);
+    color: var(--text_color);
+    background: #fff;
 }
 
 @media (max-width: 767.98px) {
@@ -1753,3 +1714,49 @@ footer .menu .item a:hover {
         padding: 15px;
     }
 }
+
+
+
+.modal_callback {
+    max-width: 577px;
+    padding: 71px 68px 72px;
+    background: #FFFFFF;
+    position: relative;
+    /* display: none; */
+}
+.modal_callback:before {
+    position: absolute;
+    content: "";
+    width: 232px;
+    height: 184px;
+    bottom: 0;
+    left: 0;
+    background: url(../images/modal_bg1.png);
+}
+.modal_callback:after {
+    position: absolute;
+    content: "";
+    width: 270px;
+    height: 158px;
+    top: 0;
+    right: 0;
+    background: url(../images/modal_bg2.png);
+}
+.modal_callback-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #333333;  
+    margin-bottom: 21px; 
+}
+.modal_callback-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.7);
+    margin-bottom: 40px;
+}
+
+
