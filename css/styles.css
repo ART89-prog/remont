@@ -1550,7 +1550,9 @@ footer .menu .item a:hover {
 
 
 
-
+.carousel__button.is-close {
+    display: none;
+}
 .modal_slider {
     max-width: 786px;
     display: none;
