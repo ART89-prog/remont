@@ -6,164 +6,142 @@
     }    */
     
 
-    .header_logo-mob {
-        display: block;
+   
+    header .mob_menu_btn {
+        display: flex;
+        order: 1;
     }
-    .header_logo {
+    header .menu {
+        position: fixed;
+        z-index: 107;
+        top: 0;
+        left: 0;
+        display: flex;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 83px 22px 46px;        
+        transition: transform .3s linear;
+        transform: translateX(-100%);
+        background: #fff;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    header .menu.show {
+        transform: translateX(0);
+    }
+    header .close_btn {
+        display: flex;
+    }
+    .menu_open header .mob_menu_btn {
         display: none;
     }
-    .header_nav .menu {
+    header .menu .item {
         width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
-    .header-box_left {
-        padding: 0px;
-        border-width: 0px 0px 0px 0px;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-left: 80px;
-        flex-shrink: 0;
+    header .menu .item + .item {
+        margin-left: 0;
     }
-    .header-box_left a + a {
-        margin-left: 0px;
-        margin-top: 12px;
+    header .menu .item > a {
+        text-align: start;
+        color: #333;
+    }  
+    .mob_menu_btn span {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        transition: background .2s linear;
+        background: #000; 
     }
-    .header-box_left span {
-        margin-left: 0px;
-        margin-top: 19px;
-    }
-    .header-box_right {
+    .mob_menu_btn span:before, 
+    .mob_menu_btn span:after {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        display: block;
         width: 100%;
-        flex-direction: column;
-        align-items: flex-end;
+        height: 100%;
+        content: '';
+        transition: .2s linear;
+        background: #000;
     }
-    .header-box {
-        justify-content: space-between;
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .mob_menu_btn span:after {
+        top: 8px;
     }
-    .header-email {
-        margin-left: 0px;
-        margin-bottom: 12px;
+    .mob_menu_btn.active span {
+        background: transparent;
     }
-    .header-soc {
-        margin-bottom: 9px;
-        margin-right: 0px;
-        margin-left: 0px;
+    .mob_menu_btn.active span:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .mob_menu_btn.active span:after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .menu_open header {
+        background: #2A292F;
+    }
+    header .close_btn {
+        display: none;
+    }
+    .menu_open header .close_btn {
+        display: block;
+        top: 7px;
+        right: 7px;
+        z-index: 999;
+        position: absolute;
+    }
+    .mob_menu_btn {
+        width: 60px;
+    }
+    .mob_menu_btn img {
+        width: 60px;
     }
 
-    .header_info-img {
-        width: 313px;
-        height: 418px;
-        margin-right: 0;
+    .header_contact-phone {
+        font-size: 18px;
     }
-    .header_info-title {
-        font-size: 28px;
-        line-height: 28px;   
-        margin-bottom: 8px;
-    }
-    .header_info-wrap {
-        margin-top: 0;
-        margin-right: 30px;
-    }
-    .header_info .cont {
-        align-items: center;
-    }
-    .header_info-text {
-        font-size: 14px;
-        line-height: 17px;
-    }
-    .about ul li:nth-child(3) {
-        margin-top: 30px;
-    }
-    .services_item {
+    .header_right-mob {
+        display: flex !important;
         flex-direction: column;
-        padding-bottom: 80px;
-        margin-bottom: 40px;
+        align-items: flex-start;
     }
-    .services_item-img {
-        margin-right: 0px;
-        margin-bottom: 55px;
-        width: 100%;
-        height: auto;
+    .header_right {
+        display: none;
     }
-    .services_item-img img {
-        margin-right: 20px;
-    }
-    .services_item:nth-child(2n) {
-        flex-direction: column;
-    }
-    .services {
-        padding: 106px 0 134px;
-    }
-    .advantages_items > * {
-        width: calc(100%/2 - 20px);
-    }
-    .map_wrap {
-        height: 530px;
-    }
-    .contacts .cont {
-        flex-direction: column;
-    }
-    .contacts_info {
-        max-width: 100%;
-    }
-    .contacts_form {
-        width: 100%;
-    }
-    .contacts_phone {
-        flex-direction: row;
-    }
-    .contacts_phone a + a {
-        margin-left: 20px;
-        margin-top: 0px;
-    }
-    .contacts {
-        padding: 75px 0 78px;
-    }
-    .contacts_title {
-        margin-bottom: 38px;
-    }
-    .contacts_text {
-        margin-bottom: 38px;
-    }
-    .contacts_phone {
-        margin-bottom: 38px;
-    }
-    .footer-box {
-        flex-direction: column;
-    }
-    .footer-email {
-        margin-left: 0px;
-        white-space: nowrap;
-    }
-    .footer-box_right .btn {
-        min-width: 168px;
-    }
-    .footer-box_right {
-        width: 100%;
-        border-width: 0px 0px 1px 0px;
+    header .btn {
+        width: 228px;
         order: -1;
-        margin-bottom: 10px;
+        margin-top: 20px;
     }
-    .footer-box_left {
-        padding: 15px 0px;
-        border-width: 0px 0px 0px 0px;
+    .header_soc {
+        order: 1;
+        margin-top: 22px;
+    }
+    .header_contact {
+        margin-top: 25px;
+    }
+    .header_right {
+        margin-left: 0;
+    }
+    .header_logo {
+        width: 86px;
+        height: 53px;
+    }
+    .header_logo img {
         width: 100%;
-        justify-content: space-between;
+        height: 100%;
     }
-    .footer-box_left a + a {
-        margin-left: 0px;
-    }
-    .footer_nav {
-        flex-direction: column-reverse;
-    }
-    .footer_logo {
-        margin-top: 50px;
-    }
-    .footer_nav .menu {
-        width: 100%;
-    }
-        
   
    
 

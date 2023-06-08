@@ -1,23 +1,6 @@
 @media print, (max-width: 1300px) {
 
-    .swiper-button-prev {
-        left: 0;
-    }
-    .swiper-button-next {
-        right: 0;
-    }
-    .swiper-wrapper {
-        padding: 0 80px;
-    }
-    .about::after {
-        left: 20px;
-    }
-    .services::after {
-        right: 20px;
-    }
-    .partners::after {
-        left: 20px;
-    }
+
 
 
 }
