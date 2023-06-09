@@ -220,17 +220,20 @@
         line-height: 27px;
         margin-bottom: 22px;
     }
-    .accordion_item .head .title {
-        font-size: 14px;
-        line-height: 17px;
-    }
     .accordion_item .head {
         align-items: center;
     }
     .repair_item-info {
         padding: 0 10px 27px;
     }
-  
+    .accordion .accordion_item.active .head .title {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .accordion_item .head .title {
+        font-size: 17px;
+        line-height: 20px;
+    }
    
 
 

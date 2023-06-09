@@ -231,6 +231,14 @@
     .project_item-link {
         font-size: 14px;
     }
+    .accordion .accordion_item.active .head .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .accordion_item .head .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
 
     
 
