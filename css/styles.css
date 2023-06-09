@@ -304,6 +304,7 @@ button {
 body.menu_open {
     overflow: hidden;
 }
+
 header .mob_menu_btn {
     display: none;
     margin-right: 0px;
@@ -401,9 +402,11 @@ header .menu .item a:hover {
     position: relative;
     transition: all .4s;
 }
+
 .header_soc a:hover {
     top: -7px;
 }
+
 .header_contact {
     margin-right: 15px;
     display: flex;
@@ -420,6 +423,7 @@ header .menu .item a:hover {
     white-space: nowrap;
     transition: all .4s;
 }
+
 .header_contact-phone:hover {
     color: var(--bg);
 }
@@ -433,6 +437,7 @@ header .menu .item a:hover {
     white-space: nowrap;
     transition: all .4s;
 }
+
 .header_contact-email:hover {
     color: var(--bg);
 }
@@ -451,6 +456,7 @@ header .btn {
     transition: all .4s;
     text-transform: uppercase;
 }
+
 header .btn:hover {
     background: #0584d3;
 }
@@ -484,7 +490,7 @@ header .btn span {
 
 .first_section .bg {
     position: absolute;
-    z-index: -2;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -497,6 +503,8 @@ header .btn span {
 .first_section-box {
     padding: 139px 50px 35px;
     margin-bottom: 215px;
+    z-index: 2;
+    position: relative;
 }
 
 .first_section .info {
@@ -587,6 +595,7 @@ header .btn span {
     position: relative;
     transition: all .4s;
 }
+
 .first_section .link:hover {
     background: #024873;
     color: #fff;
@@ -762,9 +771,24 @@ header .btn span {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
 
+.repair_item-img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 68.21%;
+    text-decoration: none;
+}
+
 .repair_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
+    height: 100%;
+    transition: transform .2s linear;
+    border-radius: inherit;
+    object-fit: cover;
 }
 
 .repair_item-info {
@@ -801,11 +825,13 @@ header .btn span {
     transition: all .4s;
     border: 2px solid transparent;
 }
+
 .repair_item-link:hover {
     border: 2px solid var(--bg);
     background: #fff;
     color: var(--text_color);
 }
+
 .repair_item-text {
     font-weight: 400;
     font-size: var(--font_size);
@@ -896,16 +922,19 @@ header .btn span {
 .callback {
     padding: 61px 0 32px;
 }
+
 .callback_img {
     width: 531px;
     height: 497px;
     margin: 0 auto;
 }
+
 .callback_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .callback_wrap {
     display: flex;
     margin-left: 87px;
@@ -931,6 +960,7 @@ header .btn span {
 
 form {
     max-width: 440px;
+    z-index: 2;
 }
 
 form .line {
@@ -953,9 +983,11 @@ form .line .field input {
     color: #000000;
     width: 100%;
 }
+
 form .line .field input:focus {
     border-bottom: 1px solid var(--bg);
 }
+
 form .line .field textarea {
     font-family: var(--font_family);
     font-weight: 400;
@@ -968,9 +1000,11 @@ form .line .field textarea {
     resize: none;
     height: 35px;
 }
+
 form .line .field textarea:focus {
     border-bottom: 1px solid var(--bg);
 }
+
 form button {
     font-weight: 500;
     font-size: 16px;
@@ -983,11 +1017,12 @@ form button {
     transition: all .4s;
     border: 2px solid transparent;
 }
+
 form button:hover {
     border: 2px solid var(--bg);
     background: #fff;
     color: var(--text_color);
-}   
+}
 
 .about_img {
     width: 486px;
@@ -1012,10 +1047,26 @@ form button:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.project_item-img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 80.1%;
+    text-decoration: none;
+}
+
 .project_item-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
+    height: 100%;
+    transition: transform .2s linear;
+    border-radius: inherit;
+    object-fit: cover;
 }
+
 
 .project_item-info {
     padding: 21px 24px 39px;
@@ -1054,11 +1105,12 @@ form button:hover {
     transition: all .4s;
     border: 2px solid transparent;
 }
+
 .project_item-link:hover {
     border: 2px solid var(--bg);
     background: #fff;
     color: var(--text_color);
-}   
+}
 
 .project .swiper-container {
     overflow: visible !important;
@@ -1277,7 +1329,7 @@ footer .menu .item a:hover {
     color: var(--bg);
 }
 
-.footer_bottom {    
+.footer_bottom {
     background: #232323;
     padding-bottom: 23px;
     padding-top: 22px;
@@ -1311,6 +1363,7 @@ footer .menu .item a:hover {
     position: relative;
     transition: all .4s;
 }
+
 .footer_soc a:hover {
     top: -7px;
 }
@@ -1428,13 +1481,16 @@ footer .menu .item a:hover {
     line-height: 24px;
     transition: all .4s;
 }
+
 .contacts_item-text.phone:hover {
     color: var(--bg);
 }
+
 .contacts_item-text.email b {
     font-weight: 500;
     transition: all .4s;
 }
+
 .contacts_item-text.email b:hover {
     color: var(--bg);
 }
@@ -1506,16 +1562,12 @@ footer .menu .item a:hover {
     font-size: 16px;
     line-height: 28px;
     color: rgba(51, 51, 51, 0.9);
-    transition: all 0.6s;
 }
 
 .accordion .accordion_item .data {
     display: none;
 }
 
-.accordion .accordion_item.active .data {
-    display: block;
-}
 
 .accordion .accordion_item.active .head span {
     color: var(--bg);
@@ -1558,6 +1610,7 @@ footer .menu .item a:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 31px 31px 35px;
 }
+
 .slider .swiper-container {
     width: 100%;
     height: 100%;
@@ -1658,6 +1711,7 @@ footer .menu .item a:hover {
 .modal_slider-info {
     margin-top: 36px;
 }
+
 .modal_slider-title {
     font-weight: 400;
     font-size: 22px;
@@ -1665,9 +1719,11 @@ footer .menu .item a:hover {
     color: #000000;
     margin-bottom: 23px;
 }
+
 .modal_slider ul {
     list-style: none;
 }
+
 .modal_slider ul li {
     list-style: none;
     font-weight: 400;
@@ -1678,24 +1734,29 @@ footer .menu .item a:hover {
     display: flex;
     align-items: flex-start;
 }
+
 .modal_slider ul li:last-child {
     margin-bottom: 0;
 }
+
 .modal_slider ul li span {
     font-weight: 600;
 }
+
 .modal_slider ul li img {
     display: block;
     margin-right: 10px;
 }
+
 .modal_slider-text {
     margin-top: 27px;
     font-weight: 400;
     font-size: var(--font_size);
     line-height: 22px;
-    color: rgba(0, 0, 0, 0.75); 
+    color: rgba(0, 0, 0, 0.75);
     margin-bottom: 39px;
 }
+
 .modal_slider-btn {
     width: 242px;
     height: 50px;
@@ -1709,6 +1770,7 @@ footer .menu .item a:hover {
     transition: all .4s;
     border: 2px solid transparent;
 }
+
 .modal_slider-btn:hover {
     border: 2px solid var(--bg);
     color: var(--text_color);
@@ -1723,6 +1785,7 @@ footer .menu .item a:hover {
     position: relative;
     display: none;
 }
+
 .modal_callback:before {
     position: absolute;
     content: "";
@@ -1731,8 +1794,9 @@ footer .menu .item a:hover {
     bottom: 0;
     left: 0;
     background: url(../images/modal_bg1.png);
-    z-index: -1;
+    z-index: 0;
 }
+
 .modal_callback:after {
     position: absolute;
     content: "";
@@ -1741,17 +1805,19 @@ footer .menu .item a:hover {
     top: 0;
     right: 0;
     background: url(../images/modal_bg2.png);
-    z-index: -1;
+    z-index: 0;
 }
+
 .modal_callback-title {
     font-weight: 600;
     font-size: 28px;
     line-height: 34px;
     text-align: center;
-    color: #333333;  
-    margin-bottom: 21px; 
+    color: #333333;
+    margin-bottom: 21px;
     text-transform: uppercase;
 }
+
 .modal_callback-text {
     font-weight: 400;
     font-size: 16px;
@@ -1760,5 +1826,3 @@ footer .menu .item a:hover {
     color: rgba(51, 51, 51, 0.7);
     margin-bottom: 40px;
 }
-
-

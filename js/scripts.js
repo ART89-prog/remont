@@ -86,14 +86,16 @@ $(() => {
 			$accordion = $(this).closest('.accordion')
 
 		if ($item.hasClass('active')) {
-			$item.removeClass('active').find('.data').slideUp(4000)
+			$item.removeClass('active').find('.data').slideUp(400)
 		} else {
 			$accordion.find('.accordion_item').removeClass('active')
-			$accordion.find('.data').slideUp(4000)
+			$accordion.find('.data').slideUp(400)
 
 			$item.addClass('active').find('.data').slideDown(400)
 		}
 	})
+
+	
 
 	// Скрол к пунктам меню
 	$(".scroll").on("click", function (e) {

@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	fakeResize2 = true
 
 	if (document.body.clientWidth < 375) {
-	document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+		document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 	}
-	
+
 	if (is_touch_device()) {
 		// Закрытие моб. меню свайпом справо на лево
 		let ts
@@ -35,20 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
 				// Свайп слева на право
 			}
 		})
-	}	
+	}
 })
 
 
-	// Ленивая загрузка
-	setTimeout(() => {
-		observer = lozad('.lozad', {
-			rootMargin: '200px 0px',
-			threshold: 0,
-			loaded: (el) => el.classList.add('loaded')
-		})
+// Ленивая загрузка
+setTimeout(() => {
+	observer = lozad('.lozad', {
+		rootMargin: '200px 0px',
+		threshold: 0,
+		loaded: (el) => el.classList.add('loaded')
+	})
 
-		observer.observe()
-	}, 200)
+	observer.observe()
+}, 200)
+
 
 
 
