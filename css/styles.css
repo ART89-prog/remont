@@ -449,6 +449,7 @@ header .btn {
     line-height: 17px;
     color: #FFFFFF;
     transition: all .4s;
+    text-transform: uppercase;
 }
 header .btn:hover {
     background: #0584d3;
@@ -702,6 +703,7 @@ header .btn span {
     background: rgba(2, 72, 115, 0.7);
     box-shadow: 0px 10px 20px rgba(23, 39, 57, 0.07);
     border-radius: 50%;
+    top: 50%;
 }
 
 .repair .swiper-button-next {
@@ -1093,6 +1095,7 @@ form button:hover {
     background: rgba(2, 72, 115, 0.7);
     box-shadow: 0px 10px 20px rgba(23, 39, 57, 0.07);
     border-radius: 50%;
+    top: 50%;
 }
 
 .project .swiper-button-next {
@@ -1413,6 +1416,7 @@ footer .menu .item a:hover {
     line-height: 28px;
     color: #FFFFFF;
     text-decoration: none;
+    transition: all .4s;
 }
 
 .contacts_item-text span {
@@ -1422,6 +1426,17 @@ footer .menu .item a:hover {
 .contacts_item-text.phone {
     font-size: 20px;
     line-height: 24px;
+    transition: all .4s;
+}
+.contacts_item-text.phone:hover {
+    color: var(--bg);
+}
+.contacts_item-text.email b {
+    font-weight: 500;
+    transition: all .4s;
+}
+.contacts_item-text.email b:hover {
+    color: var(--bg);
 }
 
 
