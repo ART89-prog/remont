@@ -1750,6 +1750,7 @@ footer .menu .item a:hover {
     text-align: center;
     color: #333333;  
     margin-bottom: 21px; 
+    text-transform: uppercase;
 }
 .modal_callback-text {
     font-weight: 400;
