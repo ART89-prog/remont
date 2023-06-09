@@ -127,7 +127,12 @@ $(() => {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
 			breakpoints: {
 				0: {
 					spaceBetween: 0,
@@ -169,7 +174,12 @@ $(() => {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-
+			lazy: {
+				enabled: true,
+				checkInView: true,
+				loadOnTransitionStart: true,
+				loadPrevNext: true
+			},
 			breakpoints: {
 				0: {
 					spaceBetween: 0,
