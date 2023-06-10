@@ -239,6 +239,21 @@
         font-size: 14px;
         line-height: 17px;
     }
+    .contacts_items_title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        transform: rotate(0deg);
+        position: absolute;
+        top: 50px;
+        right: 60px;    
+    }
+    .contacts_item-text.email,
+    .contacts_item-text.email span {
+        font-size: 14px;
+        line-height: 17px;
+    }
 
     
 

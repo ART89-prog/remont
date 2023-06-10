@@ -6,9 +6,6 @@
     .header_right {
         margin-left: auto;
     }
-    header .btn {
-        width: 170px;
-    }
     .repair .swiper-button-prev {
         left: -16px;
     }
@@ -20,6 +17,12 @@
     }
     footer .menu .item a {
         margin-right: 15px;
+    }
+    .header_logo {
+        margin-right: 10px;
+    }
+    header .btn {
+        width: 185px;
     }
 
 

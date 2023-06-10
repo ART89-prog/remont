@@ -637,10 +637,21 @@ header .btn span {
 
 .first_section .swiper-button-next {
     right: 35px;
+    transition: all .4s;
+}
+.first_section .swiper-button-next:hover {
+    background: #BE8D55;
+    box-shadow: none;
 }
 
 .first_section .swiper-button-prev {
     left: 35px;
+    transition: all .4s;
+}
+
+.first_section .swiper-button-prev:hover {
+    background: #BE8D55;
+    box-shadow: none;
 }
 
 .swiper-button-next,
@@ -713,6 +724,12 @@ header .btn span {
     box-shadow: 0px 10px 20px rgba(23, 39, 57, 0.07);
     border-radius: 50%;
     top: 50%;
+    transition: all .4s;
+}
+.repair .swiper-button-next:hover,
+.repair .swiper-button-prev:hover {
+    background: #BE8D55;
+    box-shadow: none;
 }
 
 .repair .swiper-button-next {
@@ -824,6 +841,7 @@ header .btn span {
     margin: 0 auto;
     transition: all .4s;
     border: 2px solid transparent;
+    text-transform: uppercase;
 }
 
 .repair_item-link:hover {
@@ -1148,6 +1166,12 @@ form button:hover {
     box-shadow: 0px 10px 20px rgba(23, 39, 57, 0.07);
     border-radius: 50%;
     top: 50%;
+    transition: all .4s;
+}
+.project .swiper-button-next:hover,
+.project .swiper-button-prev:hover {
+    background: #BE8D55;
+    box-shadow: none;
 }
 
 .project .swiper-button-next {
@@ -1384,6 +1408,7 @@ footer .menu .item a:hover {
     margin-bottom: 3px;
     text-decoration: none;
     white-space: nowrap;
+    transition: all .4s;
 }
 
 .footer_contact-phone:hover {
@@ -1437,6 +1462,16 @@ footer .menu .item a:hover {
     left: 0;
     padding: 177px 124px;
 }
+.contacts_items_title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    color: #FFFFFF;
+    transform: rotate(-15.4deg);
+    position: absolute;
+    top: 184px;
+    right: 50px;
+}
 
 .contacts_items a {
     text-decoration: none;
@@ -1486,12 +1521,24 @@ footer .menu .item a:hover {
     color: var(--bg);
 }
 
-.contacts_item-text.email b {
+.contacts_item-text.email {
     font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: all .4s;
+}
+.contacts_item-text.email span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
     transition: all .4s;
 }
 
-.contacts_item-text.email b:hover {
+.contacts_item-text.email:hover span {
     color: var(--bg);
 }
 
@@ -1751,7 +1798,7 @@ footer .menu .item a:hover {
 .modal_slider-text {
     margin-top: 27px;
     font-weight: 400;
-    font-size: var(--font_size);
+    font-size: 15px;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.75);
     margin-bottom: 39px;
