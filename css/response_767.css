@@ -33,6 +33,9 @@
     .map_wrap {
         height: 567px;
     }
+    .map_wrap iframe {
+        height: 100%;
+    }
     .contacts_item-text.phone {
         font-size: 16px;
         line-height: 19px;
