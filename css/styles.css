@@ -1228,7 +1228,6 @@ form button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF;
     border: 1px solid rgba(190, 141, 85, 0.3);
     border-radius: 50%;
     margin-left: 59px;
@@ -1254,31 +1253,31 @@ form button:hover {
 .steps_item:nth-child(1) .steps_item-icon:before {
     position: absolute;
     content: "";
-    width: 230px;
-    height: 59px;
-    right: calc(100% - 330px);
-    top: 19px;
-    background: url(../images/steps_bg1.png);
+    width: 193px;
+    height: 31px;
+    right: calc(100% - 290px);
+    top: 35px;
+    background: url(../images/steps_bg1.svg);
 }
 
 .steps_item:nth-child(2) .steps_item-icon:before {
     position: absolute;
     content: "";
-    width: 189px;
-    height: 59px;
-    right: calc(100% - 290px);
-    top: 19px;
-    background: url(../images/steps_bg2.png);
+    width: 170px;
+    height: 30px;
+    right: calc(100% - 278px);
+    top: 35px;
+    background: url(../images/steps_bg2.svg);
 }
 
 .steps_item:nth-child(3) .steps_item-icon:before {
     position: absolute;
     content: "";
-    width: 222px;
-    height: 58px;
-    right: calc(100% - 322px);
-    top: 19px;
-    background: url(../images/steps_bg3.png);
+    width: 192px;
+    height: 30px;
+    right: calc(100% - 290px);
+    top: 35px;
+    background: url(../images/steps_bg3.svg);
 }
 
 
